@@ -36,11 +36,11 @@ public class OperatorsChapter {
         int firstNumber = 0b11111110;
         int secondNumber = 0b00000011;
 
-        System.out.println(Integer.toBinaryString(firstNumber & secondNumber));
-        System.out.println(Integer.toBinaryString(firstNumber | secondNumber));
-        System.out.println(Integer.toBinaryString(firstNumber ^ secondNumber));
-        System.out.println(Integer.toBinaryString(firstNumber << secondNumber));
-        System.out.println(Integer.toBinaryString(firstNumber >> secondNumber));
+        System.out.println(firstNumber+" & "+secondNumber+": "+(Integer.toBinaryString(firstNumber & secondNumber)));
+        System.out.println(firstNumber+" | "+secondNumber+": "+(Integer.toBinaryString(firstNumber | secondNumber)));
+        System.out.println(firstNumber+" ^ "+secondNumber+": "+(Integer.toBinaryString(firstNumber ^ secondNumber)));
+        System.out.println(firstNumber+" << "+secondNumber+": "+(Integer.toBinaryString(firstNumber << secondNumber)));
+        System.out.println(firstNumber+" >> "+secondNumber+": "+(Integer.toBinaryString(firstNumber >> secondNumber)));
     }
 
     /*
@@ -59,7 +59,54 @@ public class OperatorsChapter {
             binaryNumber >>>= 1;
             System.out.println(Integer.toBinaryString(binaryNumber));
         }
-
     }
+
+    /*
+     * Exercise:    12
+     * Description: Start with a number that is all binary ones. Left shift it, then use the
+     *              unsigned right-shift operator to right shift through all of its binary positions, each time
+     *              displaying the result using Integer.toBinaryString( )
+     */
+
+    public static void shifting(){
+
+        int binaryNumber = 0b11111111;
+        System.out.println(Integer.toBinaryString(binaryNumber));
+        binaryNumber <<= 1;
+        System.out.println(Integer.toBinaryString(binaryNumber));
+
+        for(int i = 0; i < 9; i++){
+            binaryNumber >>>= 1;
+            System.out.println(Integer.toBinaryString(binaryNumber));
+        }
+    }
+
+    /*
+     * Exercise:     13
+     * Description:  Write a method that displays char values in binary form. Demonstrate
+     *               it using several different characters.
+     */
+
+    public static void charToBinary(){
+        char c = 'a';
+        for (; c <= 'z'; c++){
+            System.out.println("Binary representation of the symbol "+c+" is: "+Integer.toBinaryString(c));
+        }
+    }
+
+    /*
+     * Exercise:    14
+     * Description: Write a method that takes two String arguments and uses all the
+     *              boolean comparisons to compare the two Strings and print the results. For the == and !=,
+     *              also perform the equals( ) test. In main( ), call your method with some different String
+     *              objects.
+     */
+
+    public static void relationsOfStrings(String firstString, String secondString){
+        System.out.println(firstString+" == "+secondString+": "+(firstString == secondString));
+        System.out.println(firstString+" != "+secondString+": "+(firstString != secondString));
+        System.out.println(firstString+" equals() "+secondString+": "+(firstString.equals(secondString)));
+    }
+
 
 }
