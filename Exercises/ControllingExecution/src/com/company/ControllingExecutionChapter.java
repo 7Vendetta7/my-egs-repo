@@ -10,7 +10,7 @@ import java.util.Random;
  * @author      Argishti_tigranyan
  */
 
-public class ControllingExecution {
+public class ControllingExecutionChapter {
 
     /*
      * Exercise:    2
