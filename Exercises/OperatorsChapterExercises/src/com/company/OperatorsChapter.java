@@ -4,8 +4,8 @@ package com.company;
  * Description: This class is designed for covering the most part of the exercises from the ThinkingInJava4e book.
  *              Each exercise represents a public static method and each description of exercise is written above
  *              the method.
- *
- * @author Argishti_tigranyan
+ * Chapter:     Operators
+ * @author      Argishti_tigranyan
  */
 
 public class OperatorsChapter {
@@ -107,6 +107,4 @@ public class OperatorsChapter {
         System.out.println(firstString+" != "+secondString+": "+(firstString != secondString));
         System.out.println(firstString+" equals() "+secondString+": "+(firstString.equals(secondString)));
     }
-
-
 }
