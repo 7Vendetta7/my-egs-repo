@@ -1,5 +1,7 @@
 package com.company;
 
+import javax.sound.midi.Soundbank;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,5 +15,26 @@ public class Main {
 //        InitializationAndCleanupChapter.ModifiedDog.bark(true, 2);
 //        InitializationAndCleanupChapter.ModifiedDog.bark(2, true);
 
+
+//        InitializationAndCleanupChapter.FinalizeExample finalizeExample = new InitializationAndCleanupChapter.FinalizeExample();
+//        finalizeExample = null;
+//        System.gc();
+
+//        InitializationAndCleanupChapter.FinalizeExampleModified finalizeExampleModified = new InitializationAndCleanupChapter.FinalizeExampleModified(false);
+//        System.gc();
+//        System.out.println("sms");
+//        finalizeExampleModified = new InitializationAndCleanupChapter.FinalizeExampleModified(true);
+//        System.gc();
+//        finalizeExampleModified = null;
+//        System.gc();
+
+//        InitializationAndCleanupChapter.StaticInitialization.printInfo();
+
+//        InitializationAndCleanupChapter.InstanceInitialization instanceInitialization = new InitializationAndCleanupChapter.InstanceInitialization();
+//        instanceInitialization.printInfo();
+
+//        InitializationAndCleanupChapter.showCurrencies();
+
+//       InitializationAndCleanupChapter.currenciesDescription(InitializationAndCleanupChapter.Currency.AMD);
     }
 }
