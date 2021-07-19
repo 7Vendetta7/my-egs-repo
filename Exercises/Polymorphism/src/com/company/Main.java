@@ -36,6 +36,11 @@ public class Main {
 
 //        new WhiteMouse();                      //Exercise 12, it causes StackOverFlow, please try it with breakPoint
 
+//        Cycle[] cycles = {new Unicycle(), new Bicycle(), new Tricycle()};
+//
+//        for (Cycle cycle : cycles) {              //Exercise 17, here we have error,
+//            Cycle.balance();                      // because not all the "Cycles" have balance method.
+//        }
 
     }
 }
